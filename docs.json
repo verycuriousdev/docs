@@ -136,5 +136,15 @@
   },
   "footer": {
     "socials": {}
+  },
+  "seo": {
+    "metatags": {
+      "og:image": "/images/preview.jpg",
+      "og:site_name": "Omniplex AI",
+      "og:type": "website",
+      "twitter:card": "summary_large_image",
+      "twitter:image": "/images/preview.jpg",
+      "theme-color": "#02588C"
+    }
   }
 }
