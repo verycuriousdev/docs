@@ -1,0 +1,16 @@
+---
+title: Uploads (Image/Video)
+description: Endpoints, constraints, and UX expectations.
+---
+
+## Image upload
+
+- POST /api/files/upload (multipart)
+- Preview, type/size validation, progress
+
+## Video upload
+
+- POST /api/files/upload-video
+- Client extracts duration for limits
+
+Errors: show progress and error toasts.

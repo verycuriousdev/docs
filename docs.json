@@ -1,11 +1,11 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "Omniplex AI Docs",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#02588C",
+    "light": "#02588C",
+    "dark": "#024A7A"
   },
   "favicon": "/favicon.svg",
   "navigation": {
@@ -18,31 +18,59 @@
             "pages": [
               "index",
               "quickstart",
-              "development"
+              "architecture"
             ]
           },
           {
-            "group": "Customization",
+            "group": "Core Products",
             "pages": [
-              "essentials/settings",
-              "essentials/navigation"
+              "core-products/omniagent",
+              "core-products/omnisynth",
+              "core-products/omnicine",
+              "core-products/omnimotion",
+              "core-products/omnirig",
+              "core-products/omnisonic"
             ]
           },
           {
-            "group": "Writing content",
+            "group": "Flows & UX",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
+              "flows/authentication",
+              "flows/credits-and-payments",
+              "flows/profile-verse",
+              "flows/assets",
+              "flows/agent-chat",
+              "flows/image-generation",
+              "flows/video-generation",
+              "flows/motion",
+              "flows/rig-3d",
+              "flows/audio-for-video",
+              "flows/public-and-rewrites",
+              "flows/uploads",
+              "flows/errors-and-recovery",
+              "flows/notifications",
+              "flows/admin-debug"
             ]
           },
           {
-            "group": "AI tools",
+            "group": "Model Guides",
             "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
+              "model-guides/synth",
+              "model-guides/cine",
+              "model-guides/motion",
+              "model-guides/rig",
+              "model-guides/agent",
+              "model-guides/sonic"
+            ]
+          },
+          {
+            "group": "Resources",
+            "pages": [
+              "resources/changelog",
+              "resources/glossary",
+              "resources/security-and-privacy",
+              "resources/troubleshooting",
+              "resources/screenshot-debt"
             ]
           }
         ]
@@ -51,13 +79,28 @@
         "tab": "API reference",
         "groups": [
           {
-            "group": "API documentation",
+            "group": "Overview",
             "pages": [
-              "api-reference/introduction"
+              "api-reference/overview"
             ]
           },
           {
-            "group": "Endpoint examples",
+            "group": "Domains",
+            "pages": [
+              "api-reference/auth",
+              "api-reference/users",
+              "api-reference/payments",
+              "api-reference/assets",
+              "api-reference/files-and-ipfs",
+              "api-reference/agents-and-conversations",
+              "api-reference/cine",
+              "api-reference/motion",
+              "api-reference/rig",
+              "api-reference/websocket"
+            ]
+          },
+          {
+            "group": "Examples",
             "pages": [
               "api-reference/endpoint/get",
               "api-reference/endpoint/create",
@@ -69,23 +112,7 @@
       }
     ],
     "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Community",
-          "href": "https://mintlify.com/community",
-          "icon": "slack"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
+      "anchors": []
     }
   },
   "logo": {
@@ -93,35 +120,21 @@
     "dark": "/logo/dark.svg"
   },
   "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
-      }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
-    }
+    "links": []
   },
   "contextual": {
     "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
+      "copy",
+      "view",
+      "chatgpt",
+      "claude",
+      "perplexity",
+      "mcp",
+      "cursor",
+      "vscode"
+    ]
   },
   "footer": {
-    "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
-    }
+    "socials": {}
   }
 }

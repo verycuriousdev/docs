@@ -1,0 +1,16 @@
+---
+title: Credits & Payments
+description: Payment intents, wallet confirmations, and credit updates.
+---
+
+## Browse credit packs
+
+- GET /api/payments/credit-packs → select pack & currency
+- POST /api/payments/intents { pack_id, currency, wallet_address }
+
+## Pay with wallet (SOL)
+
+- Transfer on‑chain → POST /api/payments/intents/{intentId}/confirm { transaction_hash }
+- Update credits via GET /api/users/credits
+
+Errors: insufficient funds, rejected signature, webhook delays.

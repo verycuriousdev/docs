@@ -1,0 +1,10 @@
+---
+title: Errors & Recovery
+description: Auth guards, token expiry, credits, WS reconnect, and drift.
+---
+
+- Auth guard → prompt connect
+- Token expiry → refresh; on failure → logout
+- Low credits → CTA to /subscribe
+- WS reconnect with backoff; resubscribe to topics
+- Backend drift: tolerate outputs array/object; fallback to result.url.

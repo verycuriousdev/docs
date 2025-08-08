@@ -1,0 +1,21 @@
+---
+title: Authentication & Sessions
+description: Wallet connect, nonce sign, token refresh, and logout flows.
+---
+
+## Connect & Authenticate
+
+1. Request nonce: POST /api/auth/nonce
+2. Sign nonce with wallet
+3. POST /api/auth/wallet → sets httpOnly access/refresh cookies
+4. Hydrate user + credits client‑side
+
+## Token refresh
+
+- On 401/expiry, POST /api/auth/refresh. On failure → logout
+
+## Logout
+
+- DELETE /api/auth/logout → clear cookies server‑side
+
+WS auth: subprotocol `auth.<token>`.

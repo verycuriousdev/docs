@@ -1,0 +1,19 @@
+---
+title: Agent Chat
+description: Conversations, WebSocket events, uploads, and suggestions.
+---
+
+## Create conversation
+
+- POST /api/agent/default/conversations → conversation_id
+- Subscribe WS to conversation channel
+
+## Send message
+
+- POST /api/agents/conversations/{conversation_id} { message }
+
+## WS messages
+
+- agent_response, agent_progress, agent_complete, agent_error
+
+Suggestions: render metadata.parameters.suggestions[].
